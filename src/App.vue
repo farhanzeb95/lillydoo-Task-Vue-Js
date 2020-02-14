@@ -1,28 +1,47 @@
 <template>
   <div id="appHeader">
-   
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-      <div id="pkgTest">
-
-      </div>
+  <Header>
+  <HelloWorld></HelloWorld>
+  </Header>
+    
+    <Container></Container>
+    <FirstContainer></FirstContainer>
+    
   </div>
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+export default {
+  name:'App'
+
+}
+</script>
+
+<style>
+
+</style>
+<script>
+import Header from "./components/Header.vue"
+import HelloWorld from "./components/HelloWorld.vue";
+import Container from "./components/Container.vue";
+import FirstContainer from "./components/FirstContainer.vue"
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    Header,
+    HelloWorld,
+    Container,
+    FirstContainer
   }
-}
+};
 </script>
 
 <style>
 #appHeader {
   width: 100%;
   height: 30rem;
-  background-image: url('./assets/images/header-trialbox-desktop.jpg')
+  background-image: url("./assets/images/header-trialbox-desktop.jpg");
 }
 </style>
