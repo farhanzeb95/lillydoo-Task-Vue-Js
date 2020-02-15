@@ -1,12 +1,17 @@
 <template>
-  <div id="appHeader">
-  <div v-componenet="Header">
-   <HelloWorld/>
+<div id="app">
+  <Header>
+  <HelloWorld/>
+  </Header>
+  <Container/>
+  <FirstContainer/>
+  <SecondContainer/>
+  <Footer/>
 </div>
-    <Container></Container>
 
 
-  </div>
+
+
 </template>
 
 
@@ -14,6 +19,7 @@
 export default {
   name:'App'
 }
+
 </script>
 
 <style>
@@ -22,8 +28,11 @@ export default {
 <script>
 import Header from "./components/Header.vue"
 import HelloWorld from "./components/HelloWorld.vue";
-import Container from "./components/Container.vue";
-import FirstContainer from "./components/FirstContainer.vue"
+import Container from "./components/Container.vue"
+import FirstContainer from "./components/FirstContainer.vue";
+import SecondContainer from "./components/SecondContainer";
+import Footer from "./components/Footer.vue"
+
 
 export default {
   name: "App",
@@ -31,15 +40,16 @@ export default {
     Header,
     HelloWorld,
     Container,
-    FirstContainer
+    FirstContainer,
+    SecondContainer,
+    Footer
   }
 };
 </script>
 
 <style>
-#appHeader {
+#app {
   width: 100%;
-  height: 30rem;
-  background-image: url("./assets/images/header-trialbox-desktop.jpg");
+  height: auto;
 }
 </style>

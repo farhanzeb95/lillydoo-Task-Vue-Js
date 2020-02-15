@@ -1,18 +1,26 @@
 <template>
   <div class="header">
+    <HelloWorld />
   </div>
 </template>
 
 <script>
+import HelloWorld from './HelloWorld.vue';
 export default {
-    name: 'Header'
+    name: 'Header',
+    components:{
+        HelloWorld
+    }
 }
 </script>
 
 <style scoped lang="scss">
 .header {
-  width: 100%;
-  height: 30rem;
- background-image: url('../images/header-trialbox-desktop.jpg');
+    display: flex;
+    min-height: 35.25rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/img/header-trialbox-desktop.8d7d7516.jpg');
 }
 </style>
