@@ -1,12 +1,11 @@
 <template>
   <div id="appHeader">
-  <Header>
-  <HelloWorld></HelloWorld>
-  </Header>
-    
+  <div v-componenet="Header">
+   <HelloWorld/>
+</div>
     <Container></Container>
-    <FirstContainer></FirstContainer>
-    
+
+
   </div>
 </template>
 
@@ -14,7 +13,6 @@
 <script>
 export default {
   name:'App'
-
 }
 </script>
 
