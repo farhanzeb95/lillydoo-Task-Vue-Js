@@ -21,6 +21,6 @@ export default {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('/img/header-trialbox-desktop.8d7d7516.jpg');
+    background-image: url('../images/header-trialbox-desktop.jpg');
 }
 </style>

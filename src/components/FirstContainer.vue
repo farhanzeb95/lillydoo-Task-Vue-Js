@@ -1,27 +1,79 @@
 <template>
   <div class="firstContainer">
-    <HelloWorld />
+    <h2 class="topText">
+     Wie es funktioniert
+    </h2>
+  <div>
+    <ul  class="iconsInfo">
+      <li>
+        <img src="../images/lillydoo-your-trialbox-icon.svg">
+        <h4>DEIN TESTPAKET</h4>
+        <p>
+          Wir schenken Dir die Produkte,
+          <br>
+          Du übernimmst nur das Porto.
+        </p>
+      </li>
+
+       <li>
+         <img src="../images/lillydoo-your-flexibility-icon.svg">
+
+          <h4>DEINE FLEXIBILITÄT</h4>
+        <p>
+           Erste Monatsbox nach 14 Tagen für 49,50 € <br> erhalten. Oder noch vor der ersten Lieferung <br>kündigen.
+        </p>
+
+        <p>
+          <a class="hrefP" href="https://www.lillydoo.com/de/windel-abo">
+          Erfahre hier mehr über das
+          <br>
+          LILLYDOO Windel-Abo.
+          </a>
+        </p>
+      </li>
+
+       <li>
+         <img src="../images/lillydoo-your-subscription-icon.svg">
+
+          <h4>DEINE MONATSBOX</h4>
+        <p>
+          Jederzeit Windelgröße, Designs und Lieferintervalle<br> anpassen oder weitere Produkte hinzufügen.
+        </p>
+      </li>
+    </ul>
   </div>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './HelloWorld.vue';
-export default {
-    name: 'FirstContainer',
-    components:{
-        HelloWorld
-    }
-}
+
 </script>
 
 <style scoped lang="scss">
 .firstContainer {
-    display: flex;
-    min-height: 35.25rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url('/img/header-trialbox-desktop.8d7d7516.jpg');
+    // display: flex;
+    height: auto;
+    background-color: #f8f8f8;
     margin-top: 20px;
+}
+.topText{
+   font-family: cera_proregular,Helvetica,Roboto,Arial,sans-serif;
+    text-transform: none;
+    font-size: 1.688rem;
+    line-height: 1.2;
+    text-transform: none;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: center !important;
+}
+
+.iconsInfo{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.hrefP{
+  text-decoration: none;
+  color: #00afab
 }
 </style>
