@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "OverlayDiv"
 };
 </script>
 
@@ -15,10 +15,10 @@ export default {
 <style scoped>
 .overlayDiv {
   align-self: flex-end;
-    padding: 2.5rem 1rem 1.5rem 1rem;
-    background: rgba(255,255,255,.7);
-   margin-left: 65%;
-    margin-bottom: 10%;
+  padding: 2.5rem 1rem 1.5rem 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  margin-left: 65%;
+  margin-bottom: 10%;
 }
 .fontStyle {
   font-family: Museo-300, Helvetica, Roboto, Arial, sans-serif;
@@ -31,10 +31,9 @@ export default {
 .btn {
   background-color: #00afab;
   text-align-last: center;
-
   width: 18.1rem;
   height: 3rem;
-  color: aliceblue;
+  color: #fff;
   font-family: Helvetica, Roboto, Arial, sans-serif;
   text-decoration: none;
   margin-left: auto;
