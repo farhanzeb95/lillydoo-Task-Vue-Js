@@ -1,6 +1,6 @@
 <template>
   <div class="overlayDiv">
-    <h1 class="fontStyle">Dein gratis Testpaket</h1>
+    <h1 class="fontStyle">Entdecke unsere Hautfreundlichkeit</h1>
     <a href class="btn">Wähle Deine Größe</a>
   </div>
 </template>
@@ -23,12 +23,13 @@ export default {
   margin-top: 15%;
 }
 .fontStyle {
-  font-family: Museo-300, Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 2.625rem;
   text-align-last: center;
   font-style: normal;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+      text-align: center;
 }
 .btn {
   background-color: #00afab;
