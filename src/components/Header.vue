@@ -1,6 +1,6 @@
 <template>
-  <div class="header">
-    <OverlayDiv />
+  <div class="header container-fluid">
+    <OverlayDiv class="offset-md-7 col-md-4" />
   </div>
 </template>
 

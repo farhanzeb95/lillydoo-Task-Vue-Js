@@ -14,11 +14,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .overlayDiv {
-  align-self: flex-end;
+  /* align-self: flex-end; */
   padding: 2.5rem 1rem 1.5rem 1rem;
   background: rgba(255, 255, 255, 0.7);
-  margin-left: 65%;
+  /* margin-left: 65%;*/
   margin-bottom: 10%;
+  height: 50%;
+  margin-top: 15%;
 }
 .fontStyle {
   font-family: Museo-300, Helvetica, Roboto, Arial, sans-serif;

@@ -1,7 +1,5 @@
 <template>
-  <div class="footer">
-    <img class="footerImage" src="../images/pusteblume-pattern-04.png" />
-  </div>
+  <footer class="footer" />
 </template>
 
 <script>
@@ -12,11 +10,9 @@ export default {
 
 <style scoped lang="scss">
 .footer {
-  width: 100%;
-  height: 25%;
-}
-.footerImage {
-  background-size: cover;
+  height: 200px;
+  background-image: url('../images/pusteblume-pattern-04.png');
+  background-size: contain;
   background-repeat: repeat-x;
 }
 </style>

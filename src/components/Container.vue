@@ -1,66 +1,33 @@
 <template>
   <div class="container">
-    <div class="subContainer1">
-      <img style="float:right" src="../images/lillydoo-testpaket-10.jpg" />
-    </div>
-
-    <div class="subContainer2">
-      <form>
-        <h2 class="planText">
-          Entdecke unsere Hautfreundlichkeit
-        </h2>
-        <div class="selectContainer">
-          <p>WÄHLE DEINE GRÖSSE</p>
+    <div class="row">
+      <div class="col-md-6">
+        <img class="img-fluid" :src="require('@/images/lillydoo-testpaket-'+dynamicImage+'0.jpg')" />
+        <div class="floater">
+          <img class="img-fluid" src="../images/oekotex_green_de.svg" />
         </div>
+      </div>
 
-        <p>
-          Teste jetzt unsere hautfreundlichen Windeln und erhalte unsere
-          Feuchttücher mit 99 % Wasser zu Größe 1 - 3 oder die Sensitiven
-          Feuchttücher zu Größe 4 - 5. Wir zahlen die Produkte, Du nur den
-          Versand.
-        </p>
-
-        <ul>
-          <li style="color:#00afab">
-            Automatischer Übergang ins jederzeit kündbare Windel-Abo für 49,50 €
-            pro Lieferung.
-          </li>
-          <li>
-            Preise inkl. MwSt., ggf. zzgl.
-            <a
-              href="https://www.lillydoo.com/de/zahlung-und-versand"
-              target="_blank"
-            />
-          </li>
-        </ul>
-        <button class="cartButton">
-          In den Warenkorb legen
-        </button>
-        <!-- <ul>
-        <li>
-          <button>1</button>
-        </li>
-        <li>
-            <button>1</button>
-        </li>
-        <li>
-            <button>1</button>
-        </li>
-        <li>
-            <button>1</button>
-        </li>
-        <li>
-            <button>1</button>
-        </li>
-      </ul> -->
-      </form>
+      <SizeSelector class="col-md-6" :selected-image="dynamicImage" @change="updateImage" />
     </div>
   </div>
 </template>
 
 <script>
+import SizeSelector from './SizeSelector'
 export default {
-  name: "Container"
+  name: "Container",
+  components: { SizeSelector },
+  data() {
+    return {
+      dynamicImage: '1',
+    }
+  },
+  methods: {
+    updateImage(image) {
+      this.dynamicImage = image
+    }
+  }
 };
 </script>
 
@@ -100,24 +67,13 @@ export default {
   margin-bottom: 30px;
 }
 
-.cartButton {
-  margin-top: 14px;
-  margin-bottom: 10px;
-  font-size: 1.063rem;
-  height: 45px;
-  padding: 0 20px;
-  min-width: 16rem;
-  line-height: 2.8;
-  background-color: #00afab;
-  font-family: cera_proregular, Helvetica, Roboto, Arial, sans-serif;
-  margin-top: 20px;
-  width: 100%;
-  border: none;
-  cursor: pointer;
-  color: #fff;
-}
-
-.cartButton:hover {
-  opacity: 0.5;
+.floater {
+  position: absolute;
+  width: 24%;
+  top: 13%;
+  left: 9%;
+  z-index: 10;
+  box-shadow: -2px 2px 6px -3px rgba(0,0,0,.4);
+  border-radius: 3px;
 }
 </style>

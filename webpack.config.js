@@ -2,6 +2,16 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
+  chainWebpack: (config) => {
+    config.module
+      .rule("images")
+      .use("url-loader")
+      .loader("file-loader")
+      .tap((options) => {
+        options.fallback.options.name = "img/[name].[ext]"
+        return options
+      })
+  },
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -14,7 +24,9 @@ module.exports = {
         test: /\.css$/,
         use: [
           'vue-style-loader',
-          'css-loader'
+          'css-loader',
+          'postcss-loader',
+          'sass-loader'
         ],
       },      {
         test: /\.vue$/,
@@ -35,7 +47,7 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]?[hash]'
+          name: 'img/[name].[ext]'
         }
       }
     ]
