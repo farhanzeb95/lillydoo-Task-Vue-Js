@@ -78,4 +78,9 @@ export default {
   font-weight: normal;
   text-align: center !important;
 }
+
+.row{
+   padding:20px;
+}
+
 </style>

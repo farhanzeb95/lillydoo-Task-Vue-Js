@@ -23,7 +23,7 @@
         </p>
 
         <p>
-          <a class="hrefP" href="https://www.lillydoo.com/de/windel-abo">
+          <a class="hrefP" href="https://www.lillydoo.com/de/windel-abo" target="blank">
             Erfahre hier mehr über das
             <br />
             LILLYDOO Windel-Abo.

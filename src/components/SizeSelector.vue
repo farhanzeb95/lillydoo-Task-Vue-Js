@@ -9,19 +9,39 @@
 
         <ul class="buttonList">
           <li>
-            <button :class="isSelected(1)" @click="sendImage(1)">1</button>
+            <button class="sizebutton" :class="isSelected(1)" @click="sendImage(1)">
+                 <p>1 <br>
+              (2-5 KG)
+              </p>
+            </button>
           </li>
           <li>
-              <button :class="isSelected(2)" @click="sendImage(2)">2</button>
+              <button class="sizebutton" :class="isSelected(2)" @click="sendImage(2)">
+                 <p>1 <br>
+              (2-5 KG)
+              </p>
+              </button>
           </li>
           <li>
-              <button :class="isSelected(3)" @click="sendImage(3)">3</button>
+              <button class="sizebutton" :class="isSelected(3)" @click="sendImage(3)">
+                    <p>1 <br>
+              (2-5 KG)
+              </p>
+              </button>
           </li>
           <li>
-              <button :class="isSelected(4)" @click="sendImage(4)">4</button>
+              <button class="sizebutton" :class="isSelected(4)" @click="sendImage(4)">
+                   <p>1 <br>
+              (2-5 KG)
+              </p>
+              </button>
           </li>
           <li>
-              <button :class="isSelected(5)" @click="sendImage(5)">5</button>
+              <button class="sizebutton" :class="isSelected(5)" @click="sendImage(5)">
+                            <p>1 <br>
+              (2-5 KG)
+              </p>
+              </button>
           </li>
         </ul>
           <p>
@@ -40,8 +60,7 @@
               Preise inkl. MwSt., ggf. zzgl.
               <a
                 href="https://www.lillydoo.com/de/zahlung-und-versand"
-                target="_blank"
-              >Versandkosten
+                target="_blank" style="color:#00afab">Versandkosten
               </a>
             </li>
           </ul>
@@ -94,14 +113,29 @@ export default {
   list-style-type: none;
   display: flex;
 
+
   li {
     float: left;
     margin-right: 5px;
 
     button.btn-selected, button:hover {
-      color: #fff;
+      // color: #fff;
       background-color: #00afab;
+      border-color: #00afab;
     }
   }
+}
+
+.sizebutton{
+    border: 1px solid #7c7c7c;
+    color: #7c7c7c;
+    background-color: #fff;
+    text-align: center;
+    margin-right: 10px;
+    height: 60px;
+    padding: 10px;
+    &:hover{
+      color: #fff;
+    }
 }
 </style>
