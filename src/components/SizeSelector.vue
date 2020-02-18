@@ -161,7 +161,6 @@ $button-color: #00afab;
 }
 
 .listContainer {
-
 }
 
 .plainText {

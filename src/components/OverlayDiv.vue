@@ -13,6 +13,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 .overlayDiv {
   /* align-self: flex-end; */
   padding: 2.5rem 1rem 1.5rem 1rem;
