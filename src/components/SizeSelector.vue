@@ -10,19 +10,19 @@
       <ul class="buttonList">
         <li>
           <button
-            class="sizebutton"
+            class="sizebutton  btn"
             :class="isSelected(1)"
             @click="sendImage(1)"
           >
-            <p>
-              1 <br />
+              <p>
+              1 <br>
               (2-5 KG)
-            </p>
+</p>
           </button>
         </li>
         <li>
           <button
-            class="sizebutton"
+            class="sizebutton  btn"
             :class="isSelected(2)"
             @click="sendImage(2)"
           >
@@ -34,7 +34,7 @@
         </li>
         <li>
           <button
-            class="sizebutton"
+            class="sizebutton  btn"
             :class="isSelected(3)"
             @click="sendImage(3)"
           >
@@ -46,7 +46,7 @@
         </li>
         <li>
           <button
-            class="sizebutton"
+            class="sizebutton btn"
             :class="isSelected(4)"
             @click="sendImage(4)"
           >
@@ -58,7 +58,7 @@
         </li>
         <li>
           <button
-            class="sizebutton"
+            class="sizebutton btn"
             :class="isSelected(5)"
             @click="sendImage(5)"
           >
@@ -145,9 +145,8 @@ $button-color: #00afab;
 }
 .buttonList {
   list-style-type: none;
-  justify-content: space-between;
-  display: flex;
-  justify-content: flex-start;
+      display: flex;
+    justify-content: space-between;
 
   li {
     margin-right: 5px;
@@ -161,21 +160,33 @@ $button-color: #00afab;
 }
 
 .listContainer {
+  justify-content: space-between;
 }
 
 .plainText {
 }
 .sizebutton {
-  border: 1px solid #7c7c7c;
-  color: #7c7c7c;
-  background-color: #fff;
-  text-align: center;
-  margin-right: 10px;
-  height: 60px;
-  padding: 10px;
+    border: 1px solid #7c7c7c;
+    text-align: center;
+    width: 30%;
+    padding: 7px 5px 2px 5px;
+    color: #7c7c7c;
+    margin-right: 10px;
+    padding-bottom: 30px;
+    width: 100%;
+    height: 60%;
+        display: flex;
+    justify-content: space-evenly;
+
 
   &:hover {
     color: #fff;
   }
+}
+
+.sizebutton li.flex-active, .sizebutton li.selected {
+    background-color: #00afab;
+    // border-color: #00afab;
+    color: #fff;
 }
 </style>

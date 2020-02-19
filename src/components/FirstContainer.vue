@@ -5,7 +5,10 @@
     </h2>
     <div class="row">
       <div class="col-md-4">
-        <img src="../images/lillydoo-your-trialbox-icon.svg" class="mx-auto d-block" />
+        <img
+          src="../images/lillydoo-your-trialbox-icon.svg"
+          class="mx-auto d-block"
+        />
         <h4>DEIN TESTPAKET</h4>
         <p>
           Wir schenken Dir die Produkte,
@@ -14,7 +17,10 @@
         </p>
       </div>
       <div class="col-md-4">
-        <img src="../images/lillydoo-your-flexibility-icon.svg" class="mx-auto d-block" />
+        <img
+          src="../images/lillydoo-your-flexibility-icon.svg"
+          class="mx-auto d-block"
+        />
 
         <h4>DEINE FLEXIBILITÄT</h4>
         <p>
@@ -23,7 +29,11 @@
         </p>
 
         <p>
-          <a class="hrefP" href="https://www.lillydoo.com/de/windel-abo" target="blank">
+          <a
+            class="hrefP"
+            href="https://www.lillydoo.com/de/windel-abo"
+            target="blank"
+          >
             Erfahre hier mehr über das
             <br />
             LILLYDOO Windel-Abo.
@@ -32,7 +42,10 @@
       </div>
 
       <div class="col-md-4">
-        <img src="../images/lillydoo-your-subscription-icon.svg" class="mx-auto d-block" />
+        <img
+          src="../images/lillydoo-your-subscription-icon.svg"
+          class="mx-auto d-block"
+        />
 
         <h4>DEINE MONATSBOX</h4>
         <p>
@@ -80,7 +93,8 @@ export default {
   color: #00afab;
 }
 
-h4, p {
+h4,
+p {
   text-align: center;
 }
 </style>
