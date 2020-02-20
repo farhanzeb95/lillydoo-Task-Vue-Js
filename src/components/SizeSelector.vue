@@ -1,72 +1,63 @@
 <template>
   <div>
-    <h2 class="plainText">
+    <h2>
       Entdecke unsere Hautfreundlichkeit
     </h2>
     <div class="plainText">
       <p>WÄHLE DEINE GRÖSSE</p>
-    </div>
-    <div>
-      <ul class="buttonList">
-        <li>
-          <button
-            class="sizebutton  btn"
+
+      <ul  class="buttonList">
+
+        <li
+            class="sizebutton"
             :class="isSelected(1)"
             @click="sendImage(1)"
           >
-              <p>
-              1 <br>
+              <span>1<br>
               (2-5 KG)
-</p>
-          </button>
+              </span>
+
+
         </li>
-        <li>
-          <button
-            class="sizebutton  btn"
+        <li
+            class="sizebutton"
             :class="isSelected(2)"
             @click="sendImage(2)"
           >
-            <p>
-              1 <br />
+             <span>1<br>
               (2-5 KG)
-            </p>
-          </button>
+              </span>
+
         </li>
-        <li>
-          <button
-            class="sizebutton  btn"
+        <li
+            class="sizebutton"
             :class="isSelected(3)"
             @click="sendImage(3)"
           >
-            <p>
-              1 <br />
+             <span>1<br>
               (2-5 KG)
-            </p>
-          </button>
+              </span>
+
         </li>
-        <li>
-          <button
-            class="sizebutton btn"
+        <li
+            class="sizebutton"
             :class="isSelected(4)"
             @click="sendImage(4)"
           >
-            <p>
-              1 <br />
+               <span>1<br>
               (2-5 KG)
-            </p>
-          </button>
+              </span>
+
         </li>
-        <li>
-          <button
-            class="sizebutton btn"
+        <li
+            class="sizebutton"
             :class="isSelected(5)"
             @click="sendImage(5)"
           >
-            <p>
-              1 <br />
+             <span>1<br>
               (2-5 KG)
-            </p>
-          </button>
+              </span>
+
         </li>
       </ul>
     </div>
@@ -144,9 +135,10 @@ $button-color: #00afab;
   }
 }
 .buttonList {
-  list-style-type: none;
-      display: flex;
+   list-style-type: none;
+    display: flex;
     justify-content: space-between;
+
 
   li {
     margin-right: 5px;
@@ -164,29 +156,32 @@ $button-color: #00afab;
 }
 
 .plainText {
+  margin-bottom: 30px;
 }
 .sizebutton {
-    border: 1px solid #7c7c7c;
+      border: 1px solid #7c7c7c;
     text-align: center;
-    width: 30%;
+    // width: 30%;
     padding: 7px 5px 2px 5px;
     color: #7c7c7c;
     margin-right: 10px;
-    padding-bottom: 30px;
-    width: 100%;
-    height: 60%;
-        display: flex;
-    justify-content: space-evenly;
+    width: 20%;
+    height: max-content;
+      font-size: 1.3rem;
+
 
 
   &:hover {
     color: #fff;
+    cursor: pointer;
+      background-color: #00afab;
+      border-color: #00afab;
   }
 }
 
 .sizebutton li.flex-active, .sizebutton li.selected {
     background-color: #00afab;
-    // border-color: #00afab;
     color: #fff;
+
 }
 </style>

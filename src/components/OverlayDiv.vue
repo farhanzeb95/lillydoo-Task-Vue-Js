@@ -1,7 +1,7 @@
 <template>
   <div class="overlayDiv">
     <h1 class="fontStyle">Entdecke unsere Hautfreundlichkeit</h1>
-    <a href class="btn">Wähle Deine Größe</a>
+    <button href class="button btn-lg, btn-md, btn-sm, btn-xs, btn-xxl">Wähle Deine Größe</button>
   </div>
 </template>
 
@@ -15,24 +15,27 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 .overlayDiv {
-  /* align-self: flex-end; */
+/*
   padding: 2.5rem 1rem 1.5rem 1rem;
   background: rgba(255, 255, 255, 0.7);
-  /* margin-left: 65%;*/
   margin-bottom: 10%;
   height: 50%;
-  margin-top: 15%;
+  margin-top: 15%; */
+    background: rgba(255, 255, 255, 0.7);
+    height: 50%;
+      margin-top: 10%;
+      padding: 20px;
 }
 .fontStyle {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 2.625rem;
+  font-size: 5vh;
   text-align-last: center;
   font-style: normal;
   font-weight: 300;
   text-rendering: optimizeLegibility;
       text-align: center;
 }
-.btn {
+.button {
   background-color: #00afab;
   text-align-last: center;
   width: 18.1rem;
@@ -42,10 +45,21 @@ export default {
   text-decoration: none;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  display: flex;
+  justify-content: center;
+  border-radius: inherit;
+  border: none;
 }
-
-.btn:hover {
+button:hover {
   opacity: 0.5;
 }
+
+@media only screen and (max-width: 600px) {
+ .overlayDiv {
+      margin-top: 100%;
+  }
+}
+
+
+
 </style>

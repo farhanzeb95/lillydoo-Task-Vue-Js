@@ -96,5 +96,7 @@ export default {
 h4,
 p {
   text-align: center;
+  font-family:  cera_proregular, Helvetica, Roboto, Arial, sans-serif;
+      font-size: 1.063rem;
 }
 </style>

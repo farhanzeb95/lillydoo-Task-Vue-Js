@@ -85,4 +85,7 @@ export default {
   box-shadow: -2px 2px 6px -3px rgba(0, 0, 0, 0.4);
   border-radius: 3px;
 }
+.row{
+   padding:20px;
+}
 </style>
