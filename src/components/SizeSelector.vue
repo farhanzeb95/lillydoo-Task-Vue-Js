@@ -1,63 +1,41 @@
 <template>
-  <div>
+  <div class="col-md-4 offset-sm-2">
     <h2>
       Entdecke unsere Hautfreundlichkeit
     </h2>
     <div class="plainText">
       <p>WÄHLE DEINE GRÖSSE</p>
 
-      <ul  class="buttonList">
-
-        <li
-            class="sizebutton"
-            :class="isSelected(1)"
-            @click="sendImage(1)"
-          >
-              <span>1<br>
-              (2-5 KG)
-              </span>
-
-
+      <ul class="buttonList">
+        <li class="sizebutton" :class="isSelected(1)" @click="sendImage(1)">
+          <span
+            >1<br />
+            (2-5 KG)
+          </span>
         </li>
-        <li
-            class="sizebutton"
-            :class="isSelected(2)"
-            @click="sendImage(2)"
-          >
-             <span>1<br>
-              (2-5 KG)
-              </span>
-
+        <li class="sizebutton" :class="isSelected(2)" @click="sendImage(2)">
+          <span
+            >1<br />
+            (2-5 KG)
+          </span>
         </li>
-        <li
-            class="sizebutton"
-            :class="isSelected(3)"
-            @click="sendImage(3)"
-          >
-             <span>1<br>
-              (2-5 KG)
-              </span>
-
+        <li class="sizebutton" :class="isSelected(3)" @click="sendImage(3)">
+          <span
+            >1<br />
+            (2-5 KG)
+          </span>
         </li>
-        <li
-            class="sizebutton"
-            :class="isSelected(4)"
-            @click="sendImage(4)"
-          >
-               <span>1<br>
-              (2-5 KG)
-              </span>
-
+        <li class="sizebutton" :class="isSelected(4)" @click="sendImage(4)">
+          <span
+            >1<br />
+            (2-5 KG)
+          </span>
         </li>
-        <li
-            class="sizebutton"
-            :class="isSelected(5)"
-            @click="sendImage(5)"
-          >
-             <span>1<br>
-              (2-5 KG)
-              </span>
-
+        <li class="sizebutton" :class="isSelected(5)" @click="sendImage(5)">
+          <span
+            >1<br />
+            (2-5 KG)
+          </span>
         </li>
       </ul>
     </div>
@@ -135,10 +113,9 @@ $button-color: #00afab;
   }
 }
 .buttonList {
-   list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
 
   li {
     margin-right: 5px;
@@ -159,29 +136,26 @@ $button-color: #00afab;
   margin-bottom: 30px;
 }
 .sizebutton {
-      border: 1px solid #7c7c7c;
-    text-align: center;
-    // width: 30%;
-    padding: 7px 5px 2px 5px;
-    color: #7c7c7c;
-    margin-right: 10px;
-    width: 20%;
-    height: max-content;
-      font-size: 1.3rem;
-
-
+  border: 1px solid #7c7c7c;
+  text-align: center;
+  padding: 7px 5px 2px 5px;
+  color: #7c7c7c;
+  margin-right: 10px;
+  width: 20%;
+  height: max-content;
+  font-size: 1.1rem;
 
   &:hover {
     color: #fff;
     cursor: pointer;
-      background-color: #00afab;
-      border-color: #00afab;
+    background-color: #00afab;
+    border-color: #00afab;
   }
 }
 
-.sizebutton li.flex-active, .sizebutton li.selected {
-    background-color: #00afab;
-    color: #fff;
-
+.sizebutton li.flex-active,
+.sizebutton li.selected {
+  background-color: #00afab;
+  color: #fff;
 }
 </style>

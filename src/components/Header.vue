@@ -1,6 +1,6 @@
 <template>
   <div class="header container-fluid">
-    <OverlayDiv class="offset-md-7 col-md-4" />
+    <OverlayDiv />
   </div>
 </template>
 
@@ -22,5 +22,10 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../images/header-trialbox-desktop.jpg");
+}
+@media only screen and (max-width: 767px) {
+  .header.container-fluid {
+    padding: 0;
+  }
 }
 </style>

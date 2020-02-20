@@ -31,10 +31,7 @@
 
       <div class="col-md-6 row">
         <div class="col-md-4">
-          <img
-            class="img-fluid"
-            src="../images/water-wipes-15-small.jpg"
-          />
+          <img class="img-fluid" src="../images/water-wipes-15-small.jpg" />
         </div>
 
         <div class="col-md-8">
@@ -79,8 +76,7 @@ export default {
   text-align: center !important;
 }
 
-.row{
-   padding:20px;
+.row {
+  padding: 50px;
 }
-
 </style>

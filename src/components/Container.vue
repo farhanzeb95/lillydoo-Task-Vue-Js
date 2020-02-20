@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-5">
         <img
           class="img-fluid"
           :src="
@@ -13,11 +13,7 @@
         </div>
       </div>
 
-      <SizeSelector
-        class="col-md-6"
-        :selected-image="dynamicImage"
-        @change="updateImage"
-      />
+      <SizeSelector :selected-image="dynamicImage" @change="updateImage" />
     </div>
   </div>
 </template>
@@ -44,7 +40,6 @@ export default {
 .container {
   display: flex;
   min-height: 35.25rem;
-  // border: 2px solid red;
   margin-top: 20px;
   padding: 20px;
   flex-direction: row;
@@ -53,7 +48,6 @@ export default {
 .subContainer1 {
   display: flex;
   min-height: 35.25rem;
-  // border: 2px solid green;
   width: 50%;
   float: left;
 }
@@ -61,7 +55,6 @@ export default {
 .subContainer2 {
   display: flex;
   min-height: 35.25rem;
-  // border: 2px solid black;
   width: 50%;
   float: right;
 }
@@ -85,7 +78,14 @@ export default {
   box-shadow: -2px 2px 6px -3px rgba(0, 0, 0, 0.4);
   border-radius: 3px;
 }
-.row{
-   padding:20px;
+.row {
+  padding: 20px;
+  margin-left: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+  .row {
+    margin-left: 0px;
+  }
 }
 </style>

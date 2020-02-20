@@ -65,11 +65,8 @@ export default {
 
 <style scoped lang="scss">
 .firstContainer {
-  /* flex-direction: row;
-  height: auto; */
   background-color: #f8f8f8;
   padding: 15px;
-  /* margin-top: 20px; */
 }
 .topText {
   font-family: cera_proregular, Helvetica, Roboto, Arial, sans-serif;
@@ -83,11 +80,6 @@ export default {
   text-align: center !important;
 }
 
-/* .iconsInfo {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-} */
 .hrefP {
   text-decoration: none;
   color: #00afab;
@@ -96,7 +88,7 @@ export default {
 h4,
 p {
   text-align: center;
-  font-family:  cera_proregular, Helvetica, Roboto, Arial, sans-serif;
-      font-size: 1.063rem;
+  font-family: cera_proregular, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.063rem;
 }
 </style>
